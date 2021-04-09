@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "style.css"></head>
+</head>
+<body>
+
+<form class="col-sm-3" style="margin: auto;">
+    <fieldset>
+        <div class = "form-group">
+            <label for="email" class = "form-label">E-mail:</label> </br>
+            <input type = "email" class = "col-12 email-input" id = "email" name = "email" placeholder="Podaj email"/>
+        </div>
+        </br>
+        <div class = "form-group">
+            <label for="topic" class = "form-label">Temat:</label> </br>
+            <input type = "text" class = "col-12 topic-input" id = "topic" name = "topic" placeholder="Podaj temat"/>
+        </div>
+        </br>
+        <label for = "textarea">Wiadomość:</label>
+        <div class = "text">
+            <textarea class = "form-control text-input" id = "textarea"></textarea>
+        </div>
+        </br>
+        <button type="button" class="primary" onclick="send()">Wyślij</button>
+        <button type="reset" class="danger" onclick="clear()">Wyczyść</button>
+    </fieldset>
+</form>
+
+<div style = "text-align: center">
+    <p>Licznik: <a id="clicks">0</a></p>
+    </br>
+</div>
+
+<div class="col-sm-3" style = "margin: auto;">
+    <table class = "table result">
+        <tr>
+            <td><b>Wiadomość:</b></td>
+        </tr>
+        <tr>
+            <td><b>Email:</b></td>
+            <td class="email-field"></td>
+        </tr>
+        <tr>
+            <td><b>Temat:</b></td>
+            <td class = "topic-field"></td>
+        </tr>
+        <tr>
+            <td><b>Wiadomość:</b></td>
+            <td class = "text-field"></b></td>
+        </tr>
+        <tr>
+            <td><b>Została wysłana!</b></td>
+        </tr>
+    </table>
+</div>
+
+<script src="blogsc.js"></script>
+</body>
+</html>
