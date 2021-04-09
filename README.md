@@ -1,4 +1,4 @@
-# Programowanie Reaktywne - Kolokwium I
+# Technologie Aplikacji Internetowych - Kolokwium I
 
 ## Zadanie 1
 
